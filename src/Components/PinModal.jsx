@@ -7,7 +7,7 @@ const PinModal = ({ setModal }) => {
   return (
     <>
       <div className="overlay" onClick={() => setModal(false)}></div>
-      <div className="fixed z-[90] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[616px] bg-[#00000080] rounded-[10px] p-8 flex justify-start items-center flex-col gap-16">
+      <div className="fixed z-[90] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[616px] bg-[#000000] rounded-[10px] p-8 flex justify-start items-center flex-col gap-16">
         <svg
           onClick={() => setModal(false)}
           xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const PinModal = ({ setModal }) => {
             <input
               type={masterPin ? "password" : "text"}
               placeholder="Enter Master Pin"
-              className="text-white bg-input w-full  rounded-[15px] h-[80px] border-none outline-none pl-5 text-[19px] placeholder:text-white "
+              className="text-white bg-input w-full  rounded-[15px] h-[80px] border-[1px] border-white border-solid outline-none pl-5 text-[19px] placeholder:text-white "
             />
             {masterPin ? (
               <svg
@@ -75,7 +75,7 @@ const PinModal = ({ setModal }) => {
             <input
               type={masterPinConfirm ? "password" : "text"}
               placeholder="Confirm Master Pin"
-              className="text-white bg-input w-full  rounded-[15px] h-[80px] border-none outline-none pl-5 text-[19px] placeholder:text-white "
+              className="text-white bg-input w-full  rounded-[15px] h-[80px] border-[1px] border-white border-solid outline-none pl-5 text-[19px] placeholder:text-white "
             />
             {masterPinConfirm ? (
               <svg
