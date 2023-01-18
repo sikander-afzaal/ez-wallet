@@ -15,10 +15,10 @@ const MasterPin = () => {
           className="w-full max-w-[426px] object-contain"
           alt=""
         />{" "}
-        <h3 className="text-white text-center mt-2 text-[28px] sm:text-[33px] font-normal">
+        <h3 className="text-white text-center mt-2 text-[25px] sm:text-[28px] font-normal">
           Set Master Pin
         </h3>
-        <p className="text-lg sm:text-xl leading-[1.5] mb-5 mt-1 text-center text-gray">
+        <p className="text-base sm:text-lg leading-[1.5] mb-5 mt-1 text-center text-gray">
           Your Master Pin is a number between 4 and 6 digits, easy to remember,
           but hard to crack. This pin will act as your master key, you can
           compare it to the pin of your Debit Card.

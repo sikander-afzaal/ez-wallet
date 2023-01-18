@@ -13,10 +13,10 @@ const Verify = () => {
           className="w-full max-w-[426px] object-contain"
           alt=""
         />{" "}
-        <h3 className="text-white text-center mt-2 text-[28px] sm:text-[33px] font-normal">
+        <h3 className="text-white text-center mt-2 text-[25px] sm:text-[28px] font-normal">
           Verify your Email
         </h3>
-        <p className="text-lg sm:text-xl leading-[1.5] mb-5 mt-1 text-center text-gray">
+        <p className="text-base sm:text-lg leading-[1.5] mb-5 mt-1 text-center text-gray">
           An email with instructions to verify your email address has been sent
           to you. Haven't received a verification code in your email? Click the
           button to re-send or contact our support.
