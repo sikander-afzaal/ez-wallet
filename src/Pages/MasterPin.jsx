@@ -28,7 +28,7 @@ const MasterPin = () => {
             <input
               type={masterPin ? "password" : "text"}
               placeholder="Enter Master Pin"
-              className="text-white bg-input w-full  rounded-[15px] h-[80px] border-none outline-none pl-5 text-[19px] placeholder:text-white "
+              className="text-white bg-input w-full  rounded-[15px] h-[60px] sm:h-[80px] border-none outline-none pl-5 text-base sm:text-[19px] placeholder:text-white  "
             />
             {masterPin ? (
               <svg
@@ -73,7 +73,7 @@ const MasterPin = () => {
             <input
               type={masterPinConfirm ? "password" : "text"}
               placeholder="Confirm Master Pin"
-              className="text-white bg-input w-full  rounded-[15px] h-[80px] border-none outline-none pl-5 text-[19px] placeholder:text-white "
+              className="text-white bg-input w-full  rounded-[15px] h-[60px] sm:h-[80px] border-none outline-none pl-5 text-base sm:text-[19px] placeholder:text-white  "
             />
             {masterPinConfirm ? (
               <svg
@@ -119,7 +119,7 @@ const MasterPin = () => {
               e.preventDefault();
               setModal(true);
             }}
-            className="bg-purpleGr flex justify-center items-center no-underline mt-10 border-none text-white text-2xl font-semibold w-full max-w-[388px] h-[54px] rounded-[5px]"
+            className="bg-purpleGr flex justify-center items-center no-underline mt-8 border-none text-white text-xl sm:text-2xl font-semibold w-full max-w-[85%] sm:max-w-[388px] h-[50px] sm:h-[54px] rounded-[5px]"
           >
             Set
           </button>

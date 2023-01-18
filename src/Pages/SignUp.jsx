@@ -17,11 +17,10 @@ const SignUp = () => {
       <p className="text-base sm:text-lg leading-[1.5] mb-5 text-center text-gray">
         login as a DJ and earn money playing requested song on clubs, patries.{" "}
       </p>
-      <div className="flex justify-center mb-3 items-center gap-8">
+      <div className="flex justify-center mb-3 items-center gap-5 sm:gap-8">
         <a href="#" target={"#"}>
           <svg
-            width="60"
-            height="60"
+            className="sm:w-[60px] sm:h-[60px] w-[50px] h-[50px]"
             viewBox="0 0 60 60"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -80,8 +79,7 @@ const SignUp = () => {
         </a>
         <a href="#" target={"#"}>
           <svg
-            width="60"
-            height="60"
+            className="sm:w-[60px] sm:h-[60px] w-[50px] h-[50px]"
             viewBox="0 0 60 60"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -128,8 +126,7 @@ const SignUp = () => {
         </a>
         <a href="#" target={"#"}>
           <svg
-            width="60"
-            height="60"
+            className="sm:w-[60px] sm:h-[60px] w-[50px] h-[50px]"
             viewBox="0 0 60 60"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -196,18 +193,18 @@ const SignUp = () => {
         <input
           type="text"
           placeholder="User Name"
-          className="text-white bg-input w-full  rounded-[15px] h-[80px] border-none outline-none pl-5 text-[19px] placeholder:text-white mb-2"
+          className="text-white bg-input w-full  rounded-[15px] h-[60px] sm:h-[80px] border-none outline-none pl-5 text-base sm:text-[19px] placeholder:text-white  mb-2"
         />
         <input
           type="email"
           placeholder="Email Address"
-          className="text-white bg-input w-full  rounded-[15px] h-[80px] border-none outline-none pl-5 text-[19px] placeholder:text-white mb-2"
+          className="text-white bg-input w-full  rounded-[15px] h-[60px] sm:h-[80px] border-none outline-none pl-5 text-base sm:text-[19px] placeholder:text-white  mb-2"
         />
         <div className="w-full relative mb-2">
           <input
             type={hidePassword ? "password" : "text"}
             placeholder="Password"
-            className="text-white bg-input w-full  rounded-[15px] h-[80px] border-none outline-none pl-5 text-[19px] placeholder:text-white "
+            className="text-white bg-input w-full  rounded-[15px] h-[60px] sm:h-[80px] border-none outline-none pl-5 text-base sm:text-[19px] placeholder:text-white  "
           />
           {hidePassword ? (
             <svg
@@ -252,7 +249,7 @@ const SignUp = () => {
           <input
             type={hidePasswordConfirm ? "password" : "text"}
             placeholder="Confirm Password"
-            className="text-white bg-input w-full  rounded-[15px] h-[80px] border-none outline-none pl-5 text-[19px] placeholder:text-white "
+            className="text-white bg-input w-full  rounded-[15px] h-[60px] sm:h-[80px] border-none outline-none pl-5 text-base sm:text-[19px] placeholder:text-white  "
           />
           {hidePasswordConfirm ? (
             <svg
@@ -302,7 +299,7 @@ const SignUp = () => {
         </div>
         <Link
           to={"/verify"}
-          className="bg-purpleGr grid place-items-center mt-8 border-none text-white text-2xl font-semibold w-full max-w-[388px] h-[54px] rounded-[5px]"
+          className="bg-purpleGr flex justify-center items-center no-underline mt-8 border-none text-white text-xl sm:text-2xl font-semibold w-full max-w-[85%] sm:max-w-[388px] h-[50px] sm:h-[54px] rounded-[5px]"
         >
           Sign Up
         </Link>

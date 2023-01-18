@@ -7,7 +7,7 @@ const PinModal = ({ setModal }) => {
   return (
     <>
       <div className="overlay" onClick={() => setModal(false)}></div>
-      <div className="fixed z-[90] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[616px] bg-[#000000] rounded-[10px] p-8 flex justify-start items-center flex-col gap-16">
+      <div className="fixed z-[90] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[616px] bg-[#000000] rounded-[10px] px-6 py-8 sm:p-8 flex justify-start items-center flex-col gap-8">
         <svg
           onClick={() => setModal(false)}
           xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@ const PinModal = ({ setModal }) => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="white"
-          className="w-8 h-8 absolute cursor-pointer top-3 right-3"
+          className="w-6 h-6 absolute cursor-pointer top-3 right-3"
         >
           <path
             strokeLinecap="round"
@@ -24,13 +24,15 @@ const PinModal = ({ setModal }) => {
           />
         </svg>
 
-        <h3 className="text-white text-[33px] font-normal">Enter Pin</h3>
+        <h3 className="text-white text-2xl sm:text-[33px] font-normal">
+          Enter Pin
+        </h3>
         <form className="flex max-w-[500px] justify-start w-full items-center flex-col gap-3">
           <div className="w-full mb-2 relative">
             <input
               type={masterPin ? "password" : "text"}
               placeholder="Enter Master Pin"
-              className="text-white bg-input w-full  rounded-[15px] h-[80px] border-[1px] border-white border-solid outline-none pl-5 text-[19px] placeholder:text-white "
+              className="text-white border-[1px] border-white border-solid bg-input w-full  rounded-[15px] h-[60px] sm:h-[80px] outline-none pl-5 text-base sm:text-[19px] placeholder:text-white   "
             />
             {masterPin ? (
               <svg
@@ -75,7 +77,7 @@ const PinModal = ({ setModal }) => {
             <input
               type={masterPinConfirm ? "password" : "text"}
               placeholder="Confirm Master Pin"
-              className="text-white bg-input w-full  rounded-[15px] h-[80px] border-[1px] border-white border-solid outline-none pl-5 text-[19px] placeholder:text-white "
+              className="text-white border-[1px] border-white border-solid bg-input w-full  rounded-[15px] h-[60px] sm:h-[80px] outline-none pl-5 text-base sm:text-[19px] placeholder:text-white   "
             />
             {masterPinConfirm ? (
               <svg
@@ -119,7 +121,7 @@ const PinModal = ({ setModal }) => {
           <Link
             onClick={() => setModal(false)}
             to={"/"}
-            className="bg-purpleGr flex justify-center items-center no-underline mt-10 border-none text-white text-2xl font-semibold w-full max-w-[388px] h-[54px] rounded-[5px]"
+            className="bg-purpleGr flex justify-center items-center no-underline mt-8 border-none text-white text-xl sm:text-2xl font-semibold w-full max-w-[85%] sm:max-w-[388px] h-[50px] sm:h-[54px] rounded-[5px]"
           >
             Confirm
           </Link>

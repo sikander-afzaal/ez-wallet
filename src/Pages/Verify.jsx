@@ -25,11 +25,11 @@ const Verify = () => {
           <input
             type="email"
             placeholder="Email Address"
-            className="text-white bg-input w-full  rounded-[15px] h-[80px] border-none outline-none pl-5 text-[19px] placeholder:text-white mb-2"
+            className="text-white bg-input w-full  rounded-[15px] h-[60px] sm:h-[80px] border-none outline-none pl-5 text-base sm:text-[19px] placeholder:text-white  mb-2"
           />{" "}
           <Link
             to={"/master-pin"}
-            className="bg-purpleGr flex justify-center items-center no-underline mt-10 border-none text-white text-2xl font-semibold w-full max-w-[388px] h-[54px] rounded-[5px]"
+            className="bg-purpleGr flex justify-center items-center no-underline mt-8 border-none text-white text-xl sm:text-2xl font-semibold w-full max-w-[85%] sm:max-w-[388px] h-[50px] sm:h-[54px] rounded-[5px]"
           >
             Submit
           </Link>
