@@ -9,7 +9,7 @@ const MasterPin = () => {
   return (
     <>
       {modal && <PinModal setModal={setModal} />}
-      <div className="w-full max-w-[650px] flex px-5 justify-center items-center flex-col gap-3">
+      <div className="w-full py-[80px] max-w-[650px] flex px-5 justify-center items-center flex-col gap-3">
         <img
           src="/logo.png"
           className="w-full max-w-[426px] object-contain"

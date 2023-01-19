@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
   const [hidePassword, sethidePassword] = useState(true);
   return (
-    <div className="w-full max-w-[500px] flex px-5 justify-center items-center flex-col gap-3">
+    <div className="w-full max-w-[500px] py-[80px] flex px-5 justify-center items-center flex-col gap-3">
       <img
         src="/logo.png"
         className="w-full max-w-[426px] object-contain"
