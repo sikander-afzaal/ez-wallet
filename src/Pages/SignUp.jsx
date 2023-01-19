@@ -5,7 +5,7 @@ const SignUp = () => {
   const [hidePassword, sethidePassword] = useState(true);
   const [hidePasswordConfirm, sethidePasswordConfirm] = useState(true);
   return (
-    <div className="w-full max-w-[470px] flex px-5 justify-center items-center flex-col gap-3">
+    <div className="w-full py-[80px] max-w-[470px] flex px-5 justify-center items-center flex-col gap-3">
       <img
         src="/logo.png"
         className="w-full max-w-[426px] object-contain"

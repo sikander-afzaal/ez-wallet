@@ -120,7 +120,7 @@ const PinModal = ({ setModal }) => {
           </div>
           <Link
             onClick={() => setModal(false)}
-            to={"/"}
+            to={"/dashboard"}
             className="bg-purpleGr flex justify-center items-center no-underline mt-8 border-none text-white text-xl sm:text-2xl font-semibold w-full max-w-[85%] sm:max-w-[388px] h-[50px] sm:h-[54px] rounded-[5px]"
           >
             Confirm

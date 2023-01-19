@@ -12,3 +12,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+.area {
+  grid-template-areas:
+    "sidebar header "
+    "sidebar main"
+    "sidebar main";
+  grid-template-rows: 120px 1fr 1fr;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+@media screen and (max-width: 1024px) {
+  .area {
+    grid-template-areas:
+      "header header"
+      "main main"
+      "main main";
+  }
+}
