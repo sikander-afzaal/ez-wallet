@@ -294,7 +294,7 @@ const SignUp = () => {
           <input type="checkbox" className="mt-[5px]" />
           <p className="text-[#BDBDBD]">
             I accept the <span className="underline">terms and conditions</span>{" "}
-            and <span className="underline">privacy policy</span> of EZ Wallet
+            and <span className="underline">privacy policy</span> of EZZ3 Wallet
           </p>
         </div>
         <Link
