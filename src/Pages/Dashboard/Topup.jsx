@@ -62,7 +62,7 @@ const Topup = () => {
                   alt=""
                 />
                 <img
-                  src="/master-card.png"
+                  src="/mastercard.png"
                   className="bg-white cursor-pointer h-[64px] object-contain rounded-lg p-3 w-[64px]"
                   alt=""
                 />
