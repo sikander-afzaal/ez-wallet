@@ -41,7 +41,7 @@ const Rewards = () => {
           </button>
           <button className="relative sm:min-w-[360px] xl:min-w-max w-full lg:max-w-max  rounded-[10px] bg-transparent h-[50px]">
             <p className="w-full h-full rounded-[10px] px-4 bg-[#222229] flex justify-center items-center text-white font-semibold text-base sm:text-xl">
-              TOP-UP CARDWITH EZZE WALLET
+              TOP-UP CARDWITH EZZ3 WALLET
             </p>
             <div className="bg-btnBorder -z-10 rounded-[10px] absolute -inset-[1px]"></div>
           </button>

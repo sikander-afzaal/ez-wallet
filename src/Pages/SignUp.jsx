@@ -12,7 +12,7 @@ const SignUp = () => {
         alt=""
       />
       <h3 className="text-white text-center text-[25] sm:text-[28px] font-normal">
-        Welcome to EZZE Wallet
+        Welcome to EZZ3 Wallet
       </h3>
       <p className="text-base sm:text-lg leading-[1.5] mb-5 text-center text-gray">
         login as a DJ and earn money playing requested song on clubs, patries.{" "}
