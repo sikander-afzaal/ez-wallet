@@ -11,7 +11,7 @@ const Connected = () => {
           $12,345.56
         </p>
       </div>
-      <div className="grid grid-cols-1 2xl:grid-cols-2 auto-rows-fr w-full gap-8 sm:gap-[60px]">
+      <div className="grid grid-cols-1 xl:grid-cols-2 auto-rows-fr w-full gap-8 sm:gap-[60px]">
         <TimerNftBox img="/big-nft1.png" time="1 year 23 days 5 hours" />
         <TimerNftBox img="/big-nft2.png" time="1 year 23 days 5 hours" />
         <TimerNftBox img="/big-nft3.png" time="1 year 23 days 5 hours" />
