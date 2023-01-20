@@ -6,6 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        rewardGr: " linear-gradient(108.05deg, #391A8C 1.28%, #281363 100%)",
+        btnBorder: "linear-gradient(91.09deg, #7A35E8 0%, #C02DF0 101.52%)",
         plusBg:
           "linear-gradient(91.09deg, rgba(122, 53, 232, 0.2) 0%, rgba(192, 45, 240, 0.2) 101.52%)",
         main: 'url("/bg.png")',
