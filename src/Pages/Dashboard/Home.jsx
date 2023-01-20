@@ -69,14 +69,14 @@ const Home = () => {
             gap: "2rem",
           }}
         >
-          {Array(15)
+          {Array(5)
             .fill(false)
             .map((elem, idx) => {
               return (
                 <SplideSlide key={idx + "image-nft-dash"}>
                   <div className="w-[203px] h-[267px]">
                     <img
-                      src="/nft-img.png"
+                      src={`/nft-img${idx + 1}.png`}
                       className="w-full h-full object-contain"
                       alt=""
                     />

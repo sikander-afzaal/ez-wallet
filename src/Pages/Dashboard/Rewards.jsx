@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 const Rewards = () => {
+  const [dropDown, setDropDown] = useState(false);
   return (
     <div className="flex max-w-[1070px] justify-start items-start flex-col gap-8 w-full">
       <div className="flex md:flex-row flex-col w-full justify-between items-center gap-8 mid:gap-5">
@@ -50,7 +53,10 @@ const Rewards = () => {
             From
           </p>
           <div className="flex relative justify-start items-start flex-col gap-2 w-full">
-            <div className="cursor-pointer h-[64px] bg-[#4C4C4C] rounded-lg flex justify-between items-center px-4 w-full">
+            <div
+              onClick={() => setDropDown((prev) => !prev)}
+              className="cursor-pointer h-[64px] bg-[#4C4C4C] rounded-lg flex justify-between items-center px-4 w-full"
+            >
               <p className="text-white flex justify-start items-center gap-2 text-[22px] font-medium">
                 <img
                   className="w-[32px] object-contain"
@@ -65,7 +71,9 @@ const Rewards = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="white"
-                className="w-6 h-6"
+                className={`w-6 h-6 transition-all ${
+                  dropDown ? "rotate-180" : "rotate-0"
+                }`}
               >
                 <path
                   strokeLinecap="round"
@@ -74,6 +82,87 @@ const Rewards = () => {
                 />
               </svg>
             </div>
+            {dropDown && (
+              <div className="z-10 max-h-[250px] overflow-y-auto absolute top-[110%] bg-[#4c4c4c] rounded-lg left-0 w-full">
+                <p
+                  onClick={() => setDropDown(false)}
+                  className="text-white cursor-pointer hover:bg-black transition-all flex justify-start p-5 items-center gap-2 text-[22px] font-medium"
+                >
+                  <img
+                    className="w-[32px] object-contain"
+                    src="/busd.png"
+                    alt=""
+                  />{" "}
+                  BUSD
+                </p>
+                <p
+                  onClick={() => setDropDown(false)}
+                  className="text-white cursor-pointer hover:bg-black transition-all flex justify-start p-5 items-center gap-2 text-[22px] font-medium"
+                >
+                  <img
+                    className="w-[32px] object-contain"
+                    src="/busd.png"
+                    alt=""
+                  />{" "}
+                  BUSD
+                </p>
+                <p
+                  onClick={() => setDropDown(false)}
+                  className="text-white cursor-pointer hover:bg-black transition-all flex justify-start p-5 items-center gap-2 text-[22px] font-medium"
+                >
+                  <img
+                    className="w-[32px] object-contain"
+                    src="/busd.png"
+                    alt=""
+                  />{" "}
+                  BUSD
+                </p>
+                <p
+                  onClick={() => setDropDown(false)}
+                  className="text-white cursor-pointer hover:bg-black transition-all flex justify-start p-5 items-center gap-2 text-[22px] font-medium"
+                >
+                  <img
+                    className="w-[32px] object-contain"
+                    src="/busd.png"
+                    alt=""
+                  />{" "}
+                  BUSD
+                </p>
+                <p
+                  onClick={() => setDropDown(false)}
+                  className="text-white cursor-pointer hover:bg-black transition-all flex justify-start p-5 items-center gap-2 text-[22px] font-medium"
+                >
+                  <img
+                    className="w-[32px] object-contain"
+                    src="/busd.png"
+                    alt=""
+                  />{" "}
+                  BUSD
+                </p>
+                <p
+                  onClick={() => setDropDown(false)}
+                  className="text-white cursor-pointer hover:bg-black transition-all flex justify-start p-5 items-center gap-2 text-[22px] font-medium"
+                >
+                  <img
+                    className="w-[32px] object-contain"
+                    src="/busd.png"
+                    alt=""
+                  />{" "}
+                  BUSD
+                </p>
+                <p
+                  onClick={() => setDropDown(false)}
+                  className="text-white cursor-pointer hover:bg-black transition-all flex justify-start p-5 items-center gap-2 text-[22px] font-medium"
+                >
+                  <img
+                    className="w-[32px] object-contain"
+                    src="/busd.png"
+                    alt=""
+                  />{" "}
+                  BUSD
+                </p>
+              </div>
+            )}
           </div>
           <p className="text-white mt-3 opacity-[0.65] text-[22px] font-semibold">
             Amount to load to VISA

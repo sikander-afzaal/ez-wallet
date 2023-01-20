@@ -12,9 +12,9 @@ const Connected = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 2xl:grid-cols-2 auto-rows-fr w-full gap-8 sm:gap-[60px]">
-        <TimerNftBox img="/big-nft.png" time="1 year 23 days 5 hours" />
-        <TimerNftBox img="/big-nft.png" time="1 year 23 days 5 hours" />
-        <TimerNftBox img="/big-nft.png" time="1 year 23 days 5 hours" />
+        <TimerNftBox img="/big-nft1.png" time="1 year 23 days 5 hours" />
+        <TimerNftBox img="/big-nft2.png" time="1 year 23 days 5 hours" />
+        <TimerNftBox img="/big-nft3.png" time="1 year 23 days 5 hours" />
         <div className="flex justify-start items-start flex-col gap-5 w-full ">
           <h4 className="text-white opacity-[0.65] text-xl">Time Running</h4>
           <div className="w-full bg-plusBg flex justify-center items-center h-full border-2 rounded-2xl border-dashed border-[#6D6D6D]">
