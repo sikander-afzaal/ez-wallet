@@ -1,5 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { LineChart } from "../../Components/LineChart";
+import { PierChart } from "../../Components/PieChart";
 
 const Home = () => {
   return (
@@ -33,24 +35,26 @@ const Home = () => {
           <h4 className="text-white opacity-[.65] text-xl font-semibold">
             Spent past month
           </h4>
-          <div className="p-6 h-full rounded-[16px] w-full bg-darkGr">
-            <img
+          <div className="p-6 h-full max-h-[450px] flex justify-center items-center rounded-[16px] w-full bg-darkGr">
+            <PierChart />
+            {/* <img
               src="/pie.png"
               className="w-full h-full object-contain"
               alt=""
-            />
+            /> */}
           </div>
         </div>
         <div className="flex h-full justify-start items-start flex-col gap-4 w-full">
           <h4 className="text-white opacity-[.65] text-xl font-semibold">
             Earned past month
           </h4>
-          <div className="p-6 h-full rounded-[16px] w-full bg-darkGr">
-            <img
+          <div className="p-6  h-full flex justify-center items-center rounded-[16px] w-full bg-darkGr">
+            <LineChart />
+            {/* <img
               src="/linechart.png"
               className="w-full h-full object-contain"
               alt=""
-            />
+            /> */}
           </div>
         </div>
       </div>

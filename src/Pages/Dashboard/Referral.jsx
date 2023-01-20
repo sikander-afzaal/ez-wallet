@@ -1,3 +1,6 @@
+import DoughnutApp from "../../Components/Dougnut";
+import { BarChart } from "../../Components/BarChart";
+
 const Referral = () => {
   const REFER_DATA = [
     {
@@ -64,12 +67,13 @@ const Referral = () => {
             />{" "}
             Rewards Performance
           </h4>
-          <div className="p-6 h-full rounded-[16px] w-full bg-darkGr">
-            <img
+          <div className="p-6 grid place-items-center max-h-[500px] h-full rounded-[16px] w-full bg-darkGr">
+            <DoughnutApp />
+            {/* <img
               src="/circle-graph.png"
               className="w-full h-full object-contain"
               alt=""
-            />
+            /> */}
           </div>
         </div>
         <div className="flex h-full justify-start  items-start flex-col gap-4 w-full">
@@ -81,12 +85,8 @@ const Referral = () => {
             />{" "}
             Referrals Performance
           </h4>
-          <div className="p-6 h-full rounded-[16px] w-full bg-darkGr">
-            <img
-              src="/bar-chart.png"
-              className="w-full h-full object-contain"
-              alt=""
-            />
+          <div className="p-6 h-full flex justify-center items-center rounded-[16px] w-full bg-darkGr">
+            <BarChart />
           </div>
         </div>
         <div className="flex h-full justify-start  items-start flex-col gap-4 w-full">
