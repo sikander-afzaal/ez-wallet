@@ -1,3 +1,5 @@
+import NavlinkSidebar from "../Components/NavlinkSidebar";
+
 const Sidebar = ({ sidebar, setSidebar }) => {
   return (
     <>
@@ -8,7 +10,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
         ></div>
       )}
       <div
-        className={`lg:max-w-none overflow-y-auto gap-10 lg:gap-[80px] h-full border-r-[1px] px-6 justify-between pt-6 lg:pt-[140px] pb-5  border-[rgba(255,255,255,0.25)] border-solid flex  items-start flex-col sidebar lg:static fixed w-full max-w-[450px] ${
+        className={`lg:max-w-none overflow-y-auto max-h-[900px] gap-10 lg:gap-[80px] h-full  px-6 justify-between pt-6 lg:pt-[140px] pb-5   top-0 flex  items-start flex-col sidebar lg:sticky fixed w-full max-w-[450px] ${
           sidebar ? "left-0" : "-left-[600px]"
         } top-0 bg-black z-50 lg:bg-transparent transition-all duration-1000`}
       >
@@ -30,65 +32,42 @@ const Sidebar = ({ sidebar, setSidebar }) => {
 
         <div className="flex justify-start w-full items-start flex-col gap-4">
           <h3 className="text-white font-semibold text-xl mb-3">Menu</h3>
-          <div
-            className={`flex cursor-pointer justify-start gap-4 items-center bg-purple rounded-[10px] py-[8px] px-[12px] w-full text-white`}
-          >
-            <img
-              src="/dash-ico.png"
-              className={`w-[18px] h-[18px] object-contain`}
-              alt=""
-            />
-            <p className={`text-white font-medium text-xl`}>Dashboard</p>
-          </div>
-          <div
-            className={`flex cursor-pointer justify-start items-center gap-6 w-full text-white py-[8px]`}
-          >
-            <img
-              src="/top-up.png"
-              className={`w-[27px] h-[27px] p-[5px] object-contain border-[#FFFFFF80] border-[1px] border-solid rounded-[4px]`}
-              alt=""
-            />
-            <p className={`text-[#D2D2D2] font-medium text-xl`}>Topup Wallet</p>
-          </div>
-          <div
-            className={`flex cursor-pointer justify-start items-center gap-6 w-full text-white py-[8px]`}
-          >
-            <img
-              src="/visa.png"
-              className={`w-[27px] h-[27px] p-[5px] object-contain border-[#FFFFFF80] border-[1px] border-solid rounded-[4px]`}
-              alt=""
-            />
-            <p className={`text-[#D2D2D2] font-medium text-xl`}>Visa/Rewards</p>
-          </div>
-          <div
-            className={`flex cursor-pointer justify-start items-center gap-6 w-full text-white py-[8px]`}
-          >
-            <img
-              src="/top-up.png"
-              className={`w-[27px] h-[27px] p-[5px] object-contain border-[#FFFFFF80] border-[1px] border-solid rounded-[4px]`}
-              alt=""
-            />
-            <p className={`text-[#D2D2D2] font-medium text-xl`}>
-              Referral/Metrics
-            </p>
-          </div>
-          <div
-            className={`flex cursor-pointer justify-start items-center gap-6 w-full text-white py-[8px]`}
-          >
-            <img
-              src="/visa.png"
-              className={`w-[27px] h-[27px] p-[5px] object-contain border-[#FFFFFF80] border-[1px] border-solid rounded-[4px]`}
-              alt=""
-            />
-            <p className={`text-[#D2D2D2] font-medium text-xl`}>
-              Connected Dapps
-            </p>
-          </div>
+          <NavlinkSidebar
+            img="/dash-ico.png"
+            name="Dashboard"
+            link="/dashboard"
+            setSidebar={setSidebar}
+          />
+          <NavlinkSidebar
+            img="/top-up.png"
+            name="Topup Wallet"
+            link="/dashboard/top-up"
+            setSidebar={setSidebar}
+          />{" "}
+          <NavlinkSidebar
+            img="/visa.png"
+            name="Visa/Rewards"
+            link="/dashboard/rewards"
+            setSidebar={setSidebar}
+          />
+          <NavlinkSidebar
+            img="/top-up.png"
+            name="Referral/Metrics"
+            link="/dashboard/referral"
+            setSidebar={setSidebar}
+          />
+          <NavlinkSidebar
+            img="/visa.png"
+            name="Connected Dapps"
+            link="/dashboard/connected"
+            setSidebar={setSidebar}
+          />
         </div>
         <div className="flex justify-start w-full items-start flex-col gap-2">
           <h3 className="text-white font-semibold text-xl mb-3">More</h3>
 
           <div
+            onClick={() => setSidebar(false)}
             className={`flex cursor-pointer justify-start items-center gap-6 w-full text-white py-[8px]`}
           >
             <img
@@ -99,6 +78,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
             <p className={`text-[#D2D2D2] font-medium text-xl`}>Settings</p>
           </div>
           <div
+            onClick={() => setSidebar(false)}
             className={`flex cursor-pointer justify-start items-center gap-6 w-full text-white py-[8px]`}
           >
             <img
@@ -110,6 +90,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
           </div>
 
           <div
+            onClick={() => setSidebar(false)}
             className={`flex cursor-pointer justify-start items-center gap-6 w-full text-white py-[8px]`}
           >
             <img
@@ -120,7 +101,10 @@ const Sidebar = ({ sidebar, setSidebar }) => {
             <p className={`text-[#D2D2D2] font-medium text-xl`}>Help</p>
           </div>
         </div>
-        <div className="flex cursor-pointer justify-start items-center gap-4">
+        <div
+          onClick={() => setSidebar(false)}
+          className="flex cursor-pointer justify-start items-center gap-4"
+        >
           <img src="/log-out.png" className="object-contain w-5" alt="" />
           <p className="text-white font-medium text-xl">Log Out</p>
         </div>

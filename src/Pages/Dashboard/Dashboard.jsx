@@ -10,7 +10,7 @@ const Dashboard = () => {
       <div className="-z-10 bg-[#000000EB] opacity-60 w-full h-full fixed top-0 left-0"></div>
       <Header setSidebar={setSidebar} />
       <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
-      <div className="main flex justify-start px-8 py-7 overflow-x-hidden items-start flex-col w-full">
+      <div className="main border-[rgba(255,255,255,0.25)] border-solid border-l-[1px] flex justify-start px-8 py-7 overflow-x-hidden items-start flex-col w-full">
         <Outlet />
       </div>
     </div>

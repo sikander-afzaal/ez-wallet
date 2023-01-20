@@ -30,7 +30,7 @@ const Login = () => {
                 height="60"
                 rx="15"
                 fill="white"
-                fill-opacity="0.14"
+                fillOpacity="0.14"
               />
             </g>
             <path
@@ -57,9 +57,9 @@ const Login = () => {
                 width="192"
                 height="192"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feGaussianBlur in="BackgroundImageFix" stdDeviation="33" />
                 <feComposite
                   in2="SourceAlpha"
@@ -89,7 +89,7 @@ const Login = () => {
                 height="60"
                 rx="15"
                 fill="white"
-                fill-opacity="0.14"
+                fillOpacity="0.14"
               />
             </g>
             <path
@@ -104,9 +104,9 @@ const Login = () => {
                 width="192"
                 height="192"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feGaussianBlur in="BackgroundImageFix" stdDeviation="33" />
                 <feComposite
                   in2="SourceAlpha"
@@ -136,13 +136,13 @@ const Login = () => {
                 height="60"
                 rx="15"
                 fill="white"
-                fill-opacity="0.14"
+                fillOpacity="0.14"
               />
             </g>
-            <g clip-path="url(#clip0_795_22)">
+            <g clipPath="url(#clip0_795_22)">
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M15 30.0838C15 37.5413 20.4163 43.7425 27.5 45V34.1663H23.75V30H27.5V26.6663C27.5 22.9163 29.9163 20.8337 33.3337 20.8337C34.4163 20.8337 35.5837 21 36.6663 21.1663V25H34.75C32.9163 25 32.5 25.9163 32.5 27.0837V30H36.5L35.8337 34.1663H32.5V45C39.5837 43.7425 45 37.5425 45 30.0838C45 21.7875 38.25 15 30 15C21.75 15 15 21.7875 15 30.0838Z"
                 fill="white"
               />
@@ -155,9 +155,9 @@ const Login = () => {
                 width="192"
                 height="192"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feGaussianBlur in="BackgroundImageFix" stdDeviation="33" />
                 <feComposite
                   in2="SourceAlpha"
