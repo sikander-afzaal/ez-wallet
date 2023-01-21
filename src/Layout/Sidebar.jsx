@@ -10,7 +10,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
         ></div>
       )}
       <div
-        className={`lg:max-w-none overflow-y-auto max-h-[900px] gap-10 lg:gap-[80px] h-full  px-6 justify-between pt-6 lg:pt-[140px] pb-5   top-0 flex  items-start flex-col sidebar lg:sticky fixed w-full max-w-[450px] ${
+        className={`lg:max-w-none overflow-y-auto max-h-[900px] gap-10 lg:gap-[80px] h-full  px-6 justify-between  pt-3 pb-5   top-0 flex  items-start flex-col sidebar lg:sticky fixed w-full max-w-[450px] ${
           sidebar ? "left-0" : "-left-[600px]"
         } top-0 bg-black z-50 lg:bg-transparent transition-all duration-1000`}
       >
@@ -29,7 +29,11 @@ const Sidebar = ({ sidebar, setSidebar }) => {
             d="M6 18L18 6M6 6l12 12"
           />
         </svg>
-
+        <img
+          src="/logo.png"
+          className="max-w-[130px] w-full object-contain self-center -mb-[60px]"
+          alt=""
+        />
         <div className="flex justify-start w-full items-start flex-col gap-4">
           <h3 className="text-white font-semibold text-xl mb-3">Menu</h3>
           <NavlinkSidebar
