@@ -7,14 +7,15 @@ const Login = () => {
     <div className="w-full max-w-[500px] py-[80px] flex px-5 justify-center items-center flex-col gap-3">
       <img
         src="/logo.png"
-        className="w-full max-w-[426px] object-contain"
+        className="w-full max-w-[226px] -mb-4 object-contain"
         alt=""
       />
       <h3 className="text-white text-center text-[25px] sm:text-[28px] font-normal">
         Welcome to EZZ3 Wallet
       </h3>
       <p className="text-base sm:text-lg leading-[1.5] mb-5 text-center text-gray">
-        login as a DJ and earn money playing requested song on clubs, patries.{" "}
+        The first web2 to Web3 wallet solution To deliver a secure 360*
+        Digital experience
       </p>
       <div className="flex justify-center mb-3 items-center gap-5 sm:gap-8">
         <a href="#" target={"#"}>
