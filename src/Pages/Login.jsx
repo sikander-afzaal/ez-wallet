@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div className="w-full max-w-[500px] py-[80px] flex px-5 justify-center items-center flex-col gap-3">
       <img
-        src="/logo.png"
+        src="/logo3.png"
         className="w-full max-w-[226px] -mb-4 object-contain"
         alt=""
       />

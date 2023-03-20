@@ -7,7 +7,7 @@ const SignUp = () => {
   return (
     <div className="w-full py-[80px] max-w-[470px] flex px-5 justify-center items-center flex-col gap-3">
       <img
-        src="/logo.png"
+        src="/logo3.png"
         className="w-full max-w-[226px] -mb-4 object-contain"
         alt=""
       />

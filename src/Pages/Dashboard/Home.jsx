@@ -17,7 +17,7 @@ const Home = () => {
         </div>
         <div className="flex justify-start items-start flex-col gap-4 w-full">
           <h4 className="text-white opacity-[.65] text-xl font-semibold">
-            Total Balance
+            Referrals This Month
           </h4>
           <div className="flex xl:flex-nowrap flex-wrap  xl:h-[48px] justify-start items-center gap-5 w-full">
             <button className="uppercase border-none bg-purpleGr h-[50px] xl:h-full text-white text-sm 2xl:text-base font-semibold rounded-[10px] w-full xl:max-w-[170px]">

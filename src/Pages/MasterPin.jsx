@@ -11,8 +11,8 @@ const MasterPin = () => {
       {modal && <PinModal setModal={setModal} />}
       <div className="w-full py-[80px] max-w-[650px] flex px-5 justify-center items-center flex-col gap-3">
         <img
-          src="/logo.png"
-          className="w-full max-w-[426px] object-contain"
+          src="/logo3.png"
+          className="w-full max-w-[286px] object-contain"
           alt=""
         />{" "}
         <h3 className="text-white text-center mt-2 text-[25px] sm:text-[28px] font-normal">

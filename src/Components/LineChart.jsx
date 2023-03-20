@@ -44,7 +44,7 @@ export const options = {
       ticks: {
         color: "#fff",
         callback: (value, index, ticks) => {
-          return "CO2 MINER";
+          return `$${index * 100}`;
         },
       },
     },
