@@ -68,7 +68,7 @@ const Header = ({ setSidebar }) => {
         </h3>
       </div>
       <div className="flex justify-start items-center gap-5">
-        <div className="hidden md:flex justify-start text-[#8A8A8A] items-center gap-3 px-3 w-[200px] xl:w-[300px] bg-[#202020] rounded-[10px] h-[50px]">
+        {/* <div className="hidden md:flex justify-start text-[#8A8A8A] items-center gap-3 px-3 w-[200px] xl:w-[300px] bg-[#202020] rounded-[10px] h-[50px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -88,7 +88,7 @@ const Header = ({ setSidebar }) => {
             placeholder="Search..."
             className="text-inherit placeholder:text-inherit bg-transparent border-none outline-none w-full font-medium text-base"
           />
-        </div>
+        </div> */}
         {show.dropdown && (
           <div className="hidden md:flex justify-start text-white items-center gap-3 px-3 w-[120px] bg-[#202020] rounded-[10px] h-[50px]">
             <h3 className="rounded-full bg-green w-[22px] h-[22px] flex justify-center items-center p-2 text-base font-medium">
