@@ -63,7 +63,7 @@ const Header = ({ setSidebar }) => {
           />
         </svg>
 
-        <h3 className="font-semibold sm:block hidden text-[30px] xl:text-[33px] text-white">
+        <h3 className="font-semibold  text-2xl sm:text-[30px] xl:text-[33px] text-white">
           {show.heading}
         </h3>
       </div>
@@ -110,8 +110,8 @@ const Header = ({ setSidebar }) => {
           </div>
         )}
         <img
-          src="/user.png"
-          className="w-[50px] h-[50px] object-contain rounded-full"
+          src="/prof.png"
+          className="w-[42px] sm:w-[50px]  object-contain "
           alt=""
         />
       </div>
